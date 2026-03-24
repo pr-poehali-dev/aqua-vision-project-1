@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 const SWIM_IMG = "https://cdn.poehali.dev/projects/16ba86b7-3f87-4e94-b6a3-0ebb3f28a323/files/8c9b8718-8922-4f31-a85a-db95ef342026.jpg";
@@ -96,10 +97,11 @@ const Index = () => {
             <a href="#disciplines" className="text-muted-foreground hover:text-white transition-colors">Дисциплины</a>
             <a href="#races" className="text-muted-foreground hover:text-white transition-colors">Форматы гонок</a>
             <a href="#tips" className="text-muted-foreground hover:text-white transition-colors">Советы</a>
+            <Link to="/articles" className="text-muted-foreground hover:text-white transition-colors">Статьи</Link>
           </nav>
-          <button className="px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-accent to-orange-600 text-white rounded-full hover:shadow-lg hover:shadow-accent/40 transition-all">
-            Начать тренировки
-          </button>
+          <Link to="/articles" className="px-5 py-2.5 text-sm font-semibold bg-gradient-to-r from-accent to-orange-600 text-white rounded-full hover:shadow-lg hover:shadow-accent/40 transition-all">
+            Читать статьи
+          </Link>
         </div>
       </header>
 
