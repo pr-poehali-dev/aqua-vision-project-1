@@ -73,18 +73,7 @@ const ArticlePage = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-16 p-8 rounded-2xl bg-accent/10 border border-accent/25 text-center">
-          <h3 className="text-2xl font-black text-white mb-3">Готов к первому старту?</h3>
-          <p className="text-white/60 mb-6">Изучи форматы гонок и выбери подходящую дистанцию.</p>
-          <Link
-            to="/#races"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-accent to-orange-600 text-white rounded-full font-bold hover:shadow-xl hover:shadow-accent/30 transition-all"
-          >
-            Форматы гонок
-            <Icon name="ArrowRight" size={18} />
-          </Link>
-        </div>
+
       </div>
 
       {/* Other Articles */}
